@@ -12,10 +12,9 @@ Once the user have flipped two cards you wont be able to flip more cards and jus
 ## Match Cards
 If you find two matches then you can filp the third card.
 There is also a flip counter that counts if you flipped 2 cards.
+When flipped two cards that match it will be marked.
 
 ![3](/public/ReadMe/3.png)
-
-When flipped two cards that match it will be marked.
 
 ## Play Again and Feedback
 When you found all the matches the Congratulations! Will open up and a button where you can play again and also a form that you can leave feedback of the game and press send feedback. 
