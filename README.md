@@ -1,5 +1,6 @@
 # Assignment 3 - Memory Game - Testing
 
+## Game Start
 The Game starts with 16 cards flipped on the backside. 
 ![1](/public/ReadMe/1.png)
 
