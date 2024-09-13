@@ -1,7 +1,6 @@
 import { fireEvent, render, screen } from "@testing-library/react";
 import Game from '.';
 
-
 describe("Game component", () => {
   test("Check if Game component renders without crashing", () => {
     render(<Game />);
@@ -24,7 +23,7 @@ describe("Game component", () => {
     const gameoverDiv = screen.queryByTestId("feedbackform");
     expect(gameoverDiv).not.toBeInTheDocument();
   })
-  
+
 })
 
 describe("Game component - Integration", () => {
@@ -56,8 +55,7 @@ describe("Game component - Integration", () => {
     fireEvent.click(thirdCard);
 
     const openCards = screen.getAllByAltText("card front");
-    expect(openCards).toHaveLength(1);
-    
+    expect(openCards).toHaveLength(1);  
   })
 
 })
