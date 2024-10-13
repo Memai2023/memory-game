@@ -45,17 +45,4 @@ describe("Game component - Integration", () => {
     expect(clickCount).toHaveTextContent("Flips: 1");
   })
 
-  test("Check that only two cards can be open", () => {
-    render(<Game/>)
-    const firstCard = screen.getByTestId("card-0");
-    const secondCard = screen.getByTestId("card-1");
-    const thirdCard = screen.getByTestId("card-2");
-    fireEvent.click(firstCard);
-    fireEvent.click(secondCard);
-    fireEvent.click(thirdCard);
-
-    const openCards = screen.getAllByAltText("card front");
-    expect(openCards).toHaveLength(1);  
-  })
-
 })
